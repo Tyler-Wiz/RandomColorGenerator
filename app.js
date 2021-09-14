@@ -2,13 +2,19 @@ const copyText = document.getElementById("textColor");
 const buttonColor = document.getElementById("buttonColor");
 const colorList = document.querySelector('#colorList')
 
+
+// Reacting a list for unordered list use // 
 function createList(el){
     let li = document.createElement('li')
     li.style.backgroundColor = el
     return li
 }
 
-const getRandomNumber = () => Math.floor(Math.random() * 250)
+// Random Number from 1 - 255 //
+
+const getRandomNumber = () => Math.floor(Math.random() * 256)
+
+// Color generator for RGB Colors
 
 const randomColor = () =>  {
     let r = getRandomNumber()
@@ -27,8 +33,8 @@ document.querySelector('#change_color').addEventListener('click', () => {
 
 
 
-function myFunction() {
-    /* Select the text field */
+// Copy RGB //
+buttonColor.addEventListener('click', () => {
     copyText.select();
     copyText.setSelectionRange(0, 99999); /* For mobile devices */
   
@@ -37,7 +43,5 @@ function myFunction() {
   
     /* Alert the copied text */
     buttonColor.innerHTML = "Copied";
-
-  }
-
+})
   
