@@ -1,0 +1,63 @@
+*{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+body {
+    width: 90%;
+    margin: 3rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    
+}
+
+#change_color{
+    cursor: pointer;
+}
+
+.colorPicker{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+button {
+    background: none;
+    background-color: aquamarine;
+    padding: .7rem;
+    border-radius: 5px 20px 5px 20px;
+    border: none;
+    font-size: .8rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+input{
+    padding: .7rem;
+    border-radius: 5px 20px 5px 20px;
+    border: 1px solid rgb(0, 255, 179);
+    font-size: .8rem;
+    font-weight: 700;
+}
+
+input:focus{
+    outline: none;
+}
+
+.colorList{
+    max-width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+}
+
+.colorList li {
+    width: 50px;
+    height: 50px;
+}
